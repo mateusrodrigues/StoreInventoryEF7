@@ -1,0 +1,23 @@
+﻿<Window x:Class="StoreInventoryEF7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StoreInventoryEF7"
+        mc:Ignorable="d"
+        Title="Store Inventory" Height="350" Width="525" Activated="Window_Activated">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btAddProduct" Content="Add Product" Width="80" Height="30"
+                HorizontalAlignment="Left" Margin="8,8,0,8.4" Click="btAddProduct_Click"></Button>
+        <DataGrid Grid.Row="1" x:Name="dataGrid" Margin="8,7.6,8.4,7.8" Grid.ColumnSpan="3"></DataGrid>
+    </Grid>
+</Window>
